@@ -1,0 +1,854 @@
+options:
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	#CONFIGURACOES DA PARTIDA																					#
+	arenaid: 1																								# SISTEMA MULTIARENA EM BREVE FUNCIONANDO (BETA)
+	minplayers: 2																							#	quantidade minima de players para executar automaticamente a partida
+	mintempostart: 15																						#	tempo para iniciar quando atingir os jogadores minimos.
+	tempo: 300																								#	tempo da partida em segundos, recomendo 300 (5 mins)
+	tempovote:	15																							#	tempo da votaçãoem segundos, recomendo 15 (15 segundos)
+	premio1: 15																								#	premio primeiro lugar 15 coins
+	premio2: 4																								#	premio segundo lugar 4 coins
+	premio3: 3																								#	premio terceiro lugar 3 coins
+	premio1vip: 75																								#	premio primeiro lugar 15 coins
+	premio2vip: 20																								#	premio segundo lugar 4 coins
+	premio3vip: 15																								#	premio terceiro lugar 3 coins
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+	#CONFIGURACOES DO ADMIN																						#
+	permissionadmin: bb.admin																				#
+	#CONFIGURACOES DOS VIPS
+	permissionvip: bb.vip
+	#CONFIGURACOES DOS VOTOS																					#
+	voteitem1: red clay																						#
+	voteitem1name: &4&lSUPER POOP																			#
+	voteitem1value:	-2																						#
+	voteitem2: pink clay																					#
+	voteitem2name: &c&lPOOP																					#
+	voteitem2value:	-1																						#
+	voteitem3: light green clay																				#
+	voteitem3name: &a&lOK																					#
+	voteitem3value:	0																						#
+	voteitem4: green clay																					#
+	voteitem4name: &2&lGOOD																					#
+	voteitem4value:	1																						#
+	voteitem5: blue clay																					#
+	voteitem5name: &5&lEPIC																					#
+	voteitem5value:	2																						#
+	voteitem6: yellow clay																					#
+	voteitem6name: &6&lLEGENDARY																			#
+	voteitem6value:	3																						#
+	#CONFIGURACOES DOS MENUS																					#
+	menuitem: nether star																					#
+	menuitemname: &6&lMENU																					#
+	voteitemgeral: stained hardened clay																	#
+	efeitomobspawn: &8mob spawner flames																	#
+	efeitomobspawnlore: &8mob spawner flames																#
+	efeitoendersignal: &8ender signal																		#
+	efeitoendersignallore: &8ender signal																	#
+	efeitosmoke: &8smoke																					#
+	efeitosmokelore: &8smoke																				#
+	#CONFIGURACOES DAS PLACAS																					#
+	sign1: &6&lBuildBattle																					#	Como criar as placas:
+	sign2j: &4&lJogar!																						#	1º linha: [BB]
+	sign2l: &4&lSair																						#	2º linha: join
+	sign3: &a&l																								#	3º linha: <arena>
+	sign4: &a&l																								#	2º linha: leave
+	#CONFIGURACOES DE IDIOMA																					#
+	vocevotou: &eVocê votou																					#
+	vocerecebeulegendary: &eSua construção recebeu uma nota													# Legendary
+	ocorreuerro: &cOcorreu um erro interno.																	#
+	tentando: &cTentando novamente em 1 segundo.															#
+	vocejaestanapartida: &cVocê já está na partida.															#
+	aguardeapartidaacabar: &cAguarde essa partida acabar.													#
+	entrandonapartida: &cEntrando na partida.																#
+	partidalotada: &cPartida lotada.																		#
+	vocesaiudapartida: &cVocê saiu da partida.																#
+	helpjoin: &6Use &a/bb<arena> join &6para entrar na partida														#
+	helpleave: &6Use &a/bb<arena> leave &6para sair da partida														#
+	ponto: Ponto																							#
+	daplot: da plot																							#
+	setadapara: setada para																					#
+	helpplotadd: Use /bbadmin<arena> setplot <name> <ponto a or b>													#	plot add
+	Tema: &cTema																							#
+	addcomsucesso: adicionado com sucesso.																	#
+	remcomsucesso: removido com sucesso caso ele exista.													#
+	iniciothemelist: Início da lista de temas do BuildBattle by Banco_Tgames								#
+	fimthemelist: Fim da lista de temas do BuildBattle by Banco_Tgames										#
+	voceganhouem1lugar: Você ganhou essa partida em 1º lugar!												#
+	osoutrossabem: Os outros jogadores desistiram, pois sabem que você é muito bom!							#
+	partidainiciou: &cPartida iniciou.																		#
+	tempo2: Tempo																							#
+	tema: Tema																								#
+	players: Players																						#
+	estadoatual: Estado Atual																				#
+	aguardando: Aguardando																					#
+	jogadores: Jogadores																					#
+	construtor: Construtor																					#
+	vaparasuaplot: &c&lVolte para a sua plot																		#
+	explodirtudo: &4&lExplodir tudo																			#
+	efeitos: &4&lEfeitos																					#
+	cabecas: &4&lCabeças																					#
+	apagartudo: &8Apagar tudo que você construiu															#
+	efeitos2: &8Coloque efeitos incríveis em sua construção													#
+	cabecas: &8Coloque cabeças personalizadas em sua construção																					#
+	vocenaopodevotar: &c&lVocê não pode votar em sua própria construção.									#
+	vocenaopodevotar2: &c&lVocê não pode votar duas vezes.													#
+	vencedor: Vencedor																						#
+	cor1: &6																								#
+	cor2: &7																								#
+	cor3: &c																								#
+	1lugar: &l1º Lugar &f&l-																				#
+	2lugar: &l2º Lugar &f&l-																				#
+	3lugar: &l3º Lugar &f&l-																				#
+	com: com																								#
+	pontos: pontos																							#
+	sempermissao: &c&lVocê não tem permissão para fazer isso.												#
+	naoepossivelcontinuar: &c&lNão há players suficientes para iniciar a partida.							#
+	helpadm0: &6Use &a/bbadmin<arena> setplot <nome> <ponto a ou b>&6 para definir uma plot						#
+	helpadm1: &6Use &a/bbadmin<arena> setspawn&6 para setar o lobby onde os players vão ao sair da partida			#
+	helpadm2: &6Use &a/bbadmin<arena> setlobbywait&6 para setar o lobby onde os players vão ao sair da partida		#
+	helpadm15: &6Use &a/bbadmin<arena> configok&6 quando terminar de configurar o buildbattle						#
+	helpadm3: &6Use &a/bbadmin<arena> addtema <tema>&6 para adicionar um tema para a lista de temas				#
+	helpadm4: &6Use &a/bbadmin<arena> removertema <tema>&6 para remover um tema da lista de temas					#
+	helpadm5: &6Use &a/bbadmin<arena> temas&6 para ver a lista de temas											#
+	helpadm14: &8Use /bbadmin<arena> help2 para ver a lista de comandos desnecessários.							#
+	helpadm6: &8Use /bbadmin<arena> playerlist para ver a lista de jogadores										#
+	helpadm7: &8Use /bbadmin<arena> plotlivres para ver a lista de plots livres									#
+	helpadm8: &8Use /bbadmin<arena> plots para ver a lista de plots												#
+	helpadm9: &8Use /bbadmin<arena> playerplot para ver as plot dos players										#
+	helpadm10: &8Use /bbadmin<arena> testplot para ver as plot dos players											#
+	helpadm11: &8Use /bbadmin<arena> editmode para alternar entre o editmode										#
+	helpadm12: &8Use /bbadmin<arena> start para iniciar imediatamente uma partida (não recomendado)				#
+	helpadm13: &8Use /bbadmin<arena> stop para cancelar imediatamente uma partida (não recomendado)				#
+	setadopara: setado para																					#
+
+command /bb{@arenaid} <text=help>:
+	executable by: Players
+	trigger:
+		if arg 1 is "join":
+			if {ingame.%player%} is not true or false:
+				send "{@ocorreuerro}" to player
+				send "{@tentando}" to player
+				set {ingame.%player%} to false
+				wait 1 second
+				make player execute "/bb{@arenaid} join"			
+			if {ingame.%player%} is true:
+				send "{@vocejaestanapartida}" to player
+			if {ingame.%player%} is false:
+				if {{@arenaid}.iniciou} is true:
+					send "{@aguardeapartidaacabar}" to player
+				else:
+					if size of {{@arenaid}.plots.livres::*} is more than 0:
+						send "{@entrandonapartida}" to player
+						create id based score "" in sidebar of player to 0 with id "12.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "11.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "10.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "9.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "8.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "7.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "6.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "5.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "4.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "3.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "2.%player%.{@arenaid}"
+						create id based score "" in sidebar of player to 0 with id "1.%player%.{@arenaid}"
+						set {ingame.%player%} to true
+						set {arena.%player%} to {@arenaid}
+						set {{@arenaid}.tempo} to {@mintempostart}
+						add player to {{@arenaid}.jogadores::*}
+						teleport player to {{@arenaid}.lobbywait}
+						loop {{@arenaid}.plots.livres::*}:
+							add loop-value-1 to {{@arenaid}.plot.%player%::*}
+							remove loop-value-1 from {{@arenaid}.plots.livres::*}
+							stop
+					else:
+						send "{@partidalotada}" to player
+			stop
+		if arg 1 is "resetmyplot":
+			if {{@arenaid}.iniciou} is true:
+				if {ingame.%player%} is true:
+					loop {{@arenaid}.plot.%player%::*}:
+						loop blocks within {{@arenaid}.plot.%loop-value-1%.a} to {{@arenaid}.plot.%loop-value-1%.b}:
+							set loop-block to air
+					stop
+				stop
+			stop
+		if arg 1 is "leave":
+			set {ingame.%player%} to false
+			remove player from {%{arena.%player%}%.jogadores::*}
+			send "{@vocesaiudapartida}" to player
+			if {%{arena.%player%}%.iniciou} is false:
+				loop {%{arena.%player%}%.plot.%player%::*}:
+					add loop-value-1 to {%{arena.%player%}%.plots.livres::*}
+			loop {%{arena.%player%}%.plots::*}:
+				remove loop-value-1 from {%{arena.%player%}%.plot.%player%::*}
+			teleport player to {{@arenaid}.spawn}
+			clear inventory of player
+			display board named "&6&lBuild Battle" to player
+			move display of player to sidebar
+			delete {arena.%player%}
+			stop
+		if arg 1 is "help":
+			send "{@helpjoin}" to player
+			send "{@helpleave}" to player
+
+command /bbadmin{@arenaid} <text=help> [<text>] [<text>]:
+	executable by: Players
+	trigger:
+		if player has permission "{@permissionadmin}":
+			if arg 1 is set:
+				if arg 1 is "setplot":
+					if arg 2 is set:
+						if arg 3 is set:
+							set {{@arenaid}.plot.%arg 2%.%arg 3%} to player's location
+							send "{@ponto} %arg 3% {@daplot} %arg 2% {@setadapara} %player's location%"
+							if arg 3 is "a":
+								remove arg 2 from {{@arenaid}.plots::*}
+								remove arg 2 from {{@arenaid}.plots::*}
+								add arg 2 to {{@arenaid}.plots::*}
+								stop
+							stop
+						else:
+							send "{@helpplotadd}" to player
+							stop
+				if arg 1 is "addtema":
+					if arg 2 is set:
+						add arg 2 to {bb.themes::*}
+						send "{@Tema} %arg 2% {@addcomsucesso}" to player
+						stop
+					stop
+				if arg 1 is "removertema":
+					if arg 2 is set:
+						remove arg 2 from {bb.themes::*}
+						send "{@Tema} %arg 2% {@remcomsucesso}" to player
+						stop
+					stop
+				if arg 1 is "temas":
+					send "&k{@iniciothemelist}" to player
+					send "&c{@iniciothemelist}" to player
+					loop {bb.themes::*}:
+						send "&a%loop-value-1%" to player
+					send "&c{@fimthemelist}" to player
+					send "&k{@fimthemelist}" to player
+					stop
+				if arg 1 is "setspawn":
+					set {{@arenaid}.spawn} to player's location
+					send "[Re]Spawn {@setadopara} %player's location%"
+					stop
+				if arg 1 is "setlobbywait":
+					set {{@arenaid}.lobbywait} to player's location
+					send "LobbyWait {@setadopara} %player's location%"
+					stop
+				if arg 1 is "playerlist":
+					send "%{{@arenaid}.jogadores::*}%" to player
+					stop
+				if arg 1 is "plotlivres":
+					send "%{{@arenaid}.plots.livres::*}%" to player
+					stop
+				if arg 1 is "plots":
+					send "%{{@arenaid}.plots::*}%" to player
+					stop
+				if arg 1 is "playerplot":
+					loop {{@arenaid}.jogadores::*}:
+						send "%loop-value-1%: %{{@arenaid}.plot.%loop-value-1%::*}%" to player
+					stop
+				if arg 1 is "configok":
+					execute console command "/bbresetall{@arenaid}"
+				if arg 1 is "testplot":
+					if arg 2 is set:
+						if arg 3 is set:
+							teleport player to location at {{@arenaid}.plot.%arg 2%.%arg 3%}
+							loop blocks within {{@arenaid}.plot.%arg 2%.%arg 3%} to {{@arenaid}.plot.%arg 2%.%arg 3%}:
+								set loop-block to stone
+							wait 2 seconds
+							loop blocks within {{@arenaid}.plot.%arg 2%.%arg 3%} to {{@arenaid}.plot.%arg 2%.%arg 3%}:
+								set loop-block to air
+				if arg 1 is "editmode":
+					if {{@arenaid}.editmode.%player%} is true:
+						set {{@arenaid}.editmode.%player%} to false
+					else:
+						set {{@arenaid}.editmode.%player%} to true
+					send "Edit mode {@setadopara} %{{@arenaid}.editmode.%player%}%" to player
+				if arg 1 is "stop":
+					execute console command "/bbresetall{@arenaid}"
+				if arg 1 is "start":
+					execute console command "/bbstartgame{@arenaid}"
+				if arg 1 is "help":
+					send "{@helpadm0}" to player
+					send "{@helpadm1}" to player
+					send "{@helpadm2}" to player
+					send "{@helpadm15}" to player
+					send "{@helpadm3}" to player
+					send "{@helpadm4}" to player
+					send "{@helpadm5}" to player
+					send "{@helpadm14}" to player
+				if arg 1 is "help2":
+					send "{@helpadm6}" to player
+					send "{@helpadm7}" to player
+					send "{@helpadm8}" to player
+					send "{@helpadm9}" to player
+					send "{@helpadm10}" to player
+					send "{@helpadm12}" to player
+					send "{@helpadm13}" to player
+		else:
+			send "{@sempermissao}" to player
+
+on command:
+	if {ingame.%player%} is true:
+		command is not "/bb{@arenaid}" or "/bbadmin{@arenaid}":
+			cancel event
+
+command /bbresetall{@arenaid}:
+	executable by: Console
+	trigger:
+		if {{@arenaid}.fix} is equal to 0:
+			set {{@arenaid}.fix} to 3
+			stop
+		set {{@arenaid}.fix} to {{@arenaid}.fix}-1
+		set {{@arenaid}.plots.livres} to 4
+		set {{@arenaid}.iniciou} to false
+		set {{@arenaid}.votacao} to false
+		set {{@arenaid}.votacao2} to false
+		set {{@arenaid}.iniciando} to false
+		set {{@arenaid}.vencedores} to false
+		set {{@arenaid}.mob.spawn} to false
+		loop {{@arenaid}.jogadores::*}:
+			loop {{@arenaid}.votou.%loop-value-1%::*}:
+				remove loop-value-2 from {{@arenaid}.votou.%loop-value-1%::*}
+			remove loop-value-1 from {{@arenaid}.jogadores::*}
+			display board named "&6&lBuild Battle" to loop-value-1
+			move display of loop-value-1 to sidebar
+			set {ingame.%loop-value-1%} to false
+			remove loop-value-1 from {{@arenaid}.jogadores::*}
+			clear inventory of loop-value-1
+			clear the loop-value-1's inventory
+			teleport loop-value-1 to {{@arenaid}.spawn}
+			loop {{@arenaid}.plots::*}:
+				remove loop-value-2 from {{@arenaid}.plot.%loop-value-1%::*}
+				remove loop-value-2 from {{@arenaid}.plot.%loop-value-1%::*}
+				remove loop-value-2 from {{@arenaid}.plot.%loop-value-1%::*}
+				remove false from {{@arenaid}.plot.%loop-value-1%::*}
+				remove false from {{@arenaid}.plot.%loop-value-1%::*}
+				remove false from {{@arenaid}.plot.%loop-value-1%::*}
+			set {{@arenaid}.votos.%loop-value-1%} to 0
+		loop {{@arenaid}.plots::*}:
+			remove loop-value-1 from {{@arenaid}.plots.livres::*}
+			remove loop-value-1 from {{@arenaid}.plots.livres::*}
+			remove loop-value-1 from {{@arenaid}.plots.livres::*}
+		loop {{@arenaid}.plots::*}:
+			add loop-value-1 to {{@arenaid}.plots.livres::*}
+		loop {{@arenaid}.plots::*}:
+			loop blocks within {{@arenaid}.plot.%loop-value-1%.a} to {{@arenaid}.plot.%loop-value-1%.b}:
+				set loop-block to air
+		set {{@arenaid}.plotowner2} to false
+		loop {{@arenaid}.votar::*}:
+			remove loop-value-1 from {{@arenaid}.votar::*}	
+		loop {{@arenaid}.effects.mob_spawner_flames::*}:
+			remove loop-value-1 from {{@arenaid}.effects.mob_spawner_flames::*}
+		loop {{@arenaid}.effects.ender_signal::*}:
+			remove loop-value-1 from {{@arenaid}.effects.ender_signal::*}
+		loop {{@arenaid}.effects.smoke::*}:
+			remove loop-value-1 from {{@arenaid}.effects.smoke::*}
+		set {{@arenaid}.score-1} to 0
+		set {{@arenaid}.score-2} to 0
+		set {{@arenaid}.score-3} to 0
+		delete {{@arenaid}.score-1own}
+		delete {{@arenaid}.score-2own}
+		delete {{@arenaid}.score-3own}
+		set {{@arenaid}.plotowner} to false
+		execute console command "/bbkillmobs{@arenaid}"
+
+on join:
+	set {ingame.%player%} to false
+	remove player from {{@arenaid}.jogadores::*}
+	loop {{@arenaid}.plots::*}:
+		remove loop-value-1 from {{@arenaid}.plot.%player%::*}
+		remove loop-value-1 from {{@arenaid}.plot.%player%::*}
+		remove loop-value-1 from {{@arenaid}.plot.%player%::*}
+		remove false from {{@arenaid}.plot.%player%::*}
+		remove false from {{@arenaid}.plot.%player%::*}
+		remove false from {{@arenaid}.plot.%player%::*}
+	clear inventory of player
+	display board named "&6&lBuild Battle" to player
+	move display of player to sidebar
+	if player is "Banco_Tgames":
+		broadcast "&d&l[SERVER] O criador do skript de BuildBattle utilizado neste servidor (&4&lBanco_Tgames&d&L) está aqui!"
+
+on quit:
+	set {ingame.%player%} to false
+	remove player from {{@arenaid}.jogadores::*}
+	loop {{@arenaid}.plots::*}:
+		remove loop-value-1 from {{@arenaid}.plot.%player%::*}
+		remove loop-value-1 from {{@arenaid}.plot.%player%::*}
+		remove loop-value-1 from {{@arenaid}.plot.%player%::*}
+		remove false from {{@arenaid}.plot.%player%::*}
+		remove false from {{@arenaid}.plot.%player%::*}
+		remove false from {{@arenaid}.plot.%player%::*}
+	teleport player to {{@arenaid}.spawn}
+	clear inventory of player
+	display board named "&6&lBuild Battle" to player
+	move display of player to sidebar
+
+on rightclick on sign:
+	if line 1 is "[BB]" or "{@sign1}":
+		if line 2 is "join" or "{@sign2j}":
+			if line 4 is "{@arenaid}" or "{@sign4}{@arenaid}":
+				make player execute "/bb{@arenaid} join"
+				set line 1 to "{@sign1}"
+				set line 2 to "{@sign2j}"
+				set line 3 to "{@sign3}%size of {{@arenaid}.jogadores::*}%/%size of {{@arenaid}.plots::*}%"
+				set line 4 to "{@sign4}{@arenaid}"
+		if line 2 is "leave" or "{@sign2l}":
+			if line 4 is "{@arenaid}" or "{@sign4}{@arenaid}":
+				make player execute "/bb{@arenaid} leave"
+				set line 1 to "{@sign1}"
+				set line 2 to "{@sign2l}"
+				set line 3 to " "
+				set line 4 to "{@sign4}{@arenaid}"
+
+on damage:
+	cancel event
+
+command /bbstartgame{@arenaid}:
+	executable by: Console
+	trigger:
+		set {{@arenaid}.iniciando} to false
+		send "{@partidainiciou}" to {{@arenaid}.jogadores::*}
+		clear inventory of {{@arenaid}.jogadores::*}
+		set {{@arenaid}.iniciou} to true
+		set {{@arenaid}.tempo} to {@tempo}
+		set {{@arenaid}bb.theme} to random element of {bb.themes::*}
+		loop {{@arenaid}.jogadores::*}:
+			set the loop-value-1's gamemode to creative
+			loop {{@arenaid}.plot.%loop-value-1%::*}:
+				teleport loop-value-1 to {{@arenaid}.plot.%loop-value-2%.a}
+		set {{@arenaid}.mob.spawn} to false
+		loop {{@arenaid}.jogadores::*}:
+			loop {{@arenaid}.votou.%loop-value-1%::*}:
+				remove loop-value-2 from {{@arenaid}.votou.%loop-value-1%::*}
+		execute console command "bbkillmobs{@arenaid}"
+
+on spawn:
+	cancel event
+
+on rightclick holding a spawn egg:
+	cancel event
+
+every second:
+	if {{@arenaid}.iniciou} is true:
+		loop {{@arenaid}.jogadores::*}:
+			set the loop-value-1's gamemode to creative
+	set {{@arenaid}.2tempo} to {{@arenaid}.tempo}+30
+	set {{@arenaid}.ttempo} to rounded {{@arenaid}.2tempo}/60
+	set {{@arenaid}.tttempo} to rounded {{@arenaid}.ttempo}*60
+	if {{@arenaid}.tempo}-{{@arenaid}.tttempo}+60 is less than 10:
+		set {{@arenaid}.segundoscorretos} to "0%{{@arenaid}.tempo}-{{@arenaid}.tttempo}+60%"
+	if {{@arenaid}.tempo}-{{@arenaid}.tttempo}+60 is more than 9:
+		set {{@arenaid}.segundoscorretos} to "%{{@arenaid}.tempo}-{{@arenaid}.tttempo}+60%"
+	if {{@arenaid}.votacao} is false:
+		if {{@arenaid}.iniciou} is true:
+			if {{@arenaid}.tempo} is more than 0:
+				set {{@arenaid}.tempo} to {{@arenaid}.tempo}-1
+				if {{@arenaid}.tempo} is less than 10:
+					play raw sound "random.orb" at {{@arenaid}.jogadores::*} with pitch 1 volume 10
+			if {{@arenaid}.tempo} is equal to 0:
+				execute console command "/bbiniciarvotacao{@arenaid}"
+			if {{@arenaid}.tempo} is less than 0:
+				execute console command "/bbiniciarvotacao{@arenaid}"
+	if size of {{@arenaid}.jogadores::*} is more than size of {{@arenaid}.plots::*}:
+		send "{@ocorreuerro}" to {{@arenaid}.jogadores::*}
+		execute console command "/bbresetall{@arenaid}"
+	if {{@arenaid}.iniciou} is false:
+		if size of {{@arenaid}.jogadores::*} is equal to size of {{@arenaid}.plots::*}:
+			execute console command "/bbstartgame{@arenaid}"
+		if {{@arenaid}.iniciando} is false:
+			if size of {{@arenaid}.jogadores::*} is more than {@minplayers}-1:
+				set {{@arenaid}.iniciando} to true
+				set {{@arenaid}.tempo} to {@mintempostart}
+			if size of {{@arenaid}.jogadores::*} is equal to size of {{@arenaid}.plots::*}:
+				set {{@arenaid}.iniciando} to true
+				set {{@arenaid}.tempo} to {@mintempostart}
+			if size of {{@arenaid}.jogadores::*} is less than {@minplayers}:
+				set {{@arenaid}.tempo} to {@tempo}
+				set {{@arenaid}.iniciando} to false
+	if {{@arenaid}.iniciando} is true:
+		if {{@arenaid}.tempo} is more than 0:
+			set {{@arenaid}.tempo} to {{@arenaid}.tempo}-1
+			if {{@arenaid}.tempo} is less than 10:
+				play raw sound "random.orb" at {{@arenaid}.jogadores::*} with pitch 1 volume 10
+		if {{@arenaid}.tempo} is less than 1:
+			if size of {{@arenaid}.jogadores::*} is less than {@minplayers}:
+				send "{@naoepossivelcontinuar}" to {{@arenaid}.jogadores::*}
+				set {{@arenaid}.iniciando} to false
+				set {{@arenaid}.tempo} to {@tempo}
+			else:
+				execute console command "/bbstartgame{@arenaid}"
+	if {{@arenaid}.votacao2} is true:
+		loop {{@arenaid}.jogadores::*}:
+			set slot 0 of loop-value-1 to {@voteitem1} named "{@voteitem1name}"
+			set slot 1 of loop-value-1 to {@voteitem2} named "{@voteitem2name}"
+			set slot 2 of loop-value-1 to {@voteitem3} named "{@voteitem3name}"
+			set slot 3 of loop-value-1 to {@voteitem4} named "{@voteitem4name}"
+			set slot 4 of loop-value-1 to {@voteitem5} named "{@voteitem5name}"
+			set slot 5 of loop-value-1 to {@voteitem6} named "{@voteitem6name}"
+			set slot 6 of loop-value-1 to air named "&6&lAIR"
+			set slot 7 of loop-value-1 to air named "&6&lAIR"
+			set slot 8 of loop-value-1 to air named "&6&lAIR"
+	else:
+		loop {{@arenaid}.jogadores::*}:
+			set slot 8 of loop-value-1 to {@menuitem} named "{@menuitemname}"
+			wait 10 tick
+			set slot 8 of loop-value-1 to {@menuitem} named " {@menuitemname} "
+	if size of {{@arenaid}.jogadores::*} is 1:
+		if {{@arenaid}.iniciou} is true:
+			loop {{@arenaid}.jogadores::*}:
+				send "{@voceganhouem1lugar}" to loop-value-1
+				send "{@osoutrossabem}" to loop-value-1
+				execute console command "/bbresetall{@arenaid}"
+	if size of {{@arenaid}.jogadores::*} is 0:
+		if {{@arenaid}.iniciou} is true:
+			execute console command "/bbresetall{@arenaid}"
+	
+	#efeitos
+	loop {{@arenaid}.effects.mob_spawner_flames::*}:
+		play mob spawner flames at location at loop-value-1
+	loop {{@arenaid}.effects.ender_signal::*}:
+		play ender signal at location at loop-value-1
+	loop {{@arenaid}.effects.smoke::*}:
+		play smoke at location at loop-value-1
+
+every 10 tick:
+	loop size of {{@arenaid}.jogadores::*} times:
+		loop {{@arenaid}.jogadores::*}:
+			if {{@arenaid}.votacao2} is false:
+				if {{@arenaid}.iniciou} is true:
+					update score with id "12.%loop-value-1%.{@arenaid}" to "" and 0
+					update score with id "11.%loop-value-1%.{@arenaid}" to "" and 0
+					update score with id "10.%loop-value-1%.{@arenaid}" to "" and 0
+					update score with id "9.%loop-value-1%.{@arenaid}" to """{@tempo2}: &a%{{@arenaid}.ttempo}-1%:%{{@arenaid}.segundoscorretos}%" and 9
+					update score with id "8.%loop-value-1%.{@arenaid}" to """   " and 8
+					update score with id "7.%loop-value-1%.{@arenaid}" to """{@tema}:" and 7
+					update score with id "6.%loop-value-1%.{@arenaid}" to """&a%{{@arenaid}bb.theme}%" and 6
+					update score with id "5.%loop-value-1%.{@arenaid}" to """  " and 5
+					update score with id "4.%loop-value-1%.{@arenaid}" to """{@players}: &a%size of {{@arenaid}.jogadores::*}%/%size of {{@arenaid}.plots::*}%" and 4
+					update score with id "3.%loop-value-1%.{@arenaid}" to """ " and 3
+					update score with id "2.%loop-value-1%.{@arenaid}" to """www.youtube.com" and 2
+					update score with id "1.%loop-value-1%.{@arenaid}" to """     hiperesp" and 1
+					set name of sidebar of loop-value-1 to "{@sign1}"
+				else:
+					if {{@arenaid}.iniciou} is false:
+						update score with id "12.%loop-value-1%.{@arenaid}" to "" and 0
+						update score with id "11.%loop-value-1%.{@arenaid}" to """" and 0
+						update score with id "10.%loop-value-1%.{@arenaid}" to """{@tempo2}: &a%{{@arenaid}.ttempo}-1%:%{{@arenaid}.segundoscorretos}%" and 10
+						update score with id "9.%loop-value-1%.{@arenaid}" to """   " and 9
+						update score with id "8.%loop-value-1%.{@arenaid}" to """{@estadoatual}:" and 8
+						update score with id "7.%loop-value-1%.{@arenaid}" to """&a{@aguardando}" and 7
+						update score with id "6.%loop-value-1%.{@arenaid}" to """&a{@jogadores}" and 6
+						update score with id "5.%loop-value-1%.{@arenaid}" to """  " and 5
+						update score with id "4.%loop-value-1%.{@arenaid}" to """{@players}: &a%size of {{@arenaid}.jogadores::*}%/%size of {{@arenaid}.plots::*}%" and 4
+						update score with id "3.%loop-value-1%.{@arenaid}" to """ " and 3
+						update score with id "2.%loop-value-1%.{@arenaid}" to """www.youtube.com" and 2
+						update score with id "1.%loop-value-1%.{@arenaid}" to """     hiperesp" and 1
+						set name of sidebar of loop-value-1 to "&6&lBuild Battle"
+			else:
+				if {{@arenaid}.votacao2} is false:
+					update score with id "12.%loop-value-1%.{@arenaid}" to """{@tempo2}: &a%{{@arenaid}.ttempo}-1%:%{{@arenaid}.segundoscorretos}%" and 12
+					update score with id "11.%loop-value-1%.{@arenaid}" to """    " and 11
+					update score with id "10.%loop-value-1%.{@arenaid}" to """{@tema}:" and 10
+					update score with id "9.%loop-value-1%.{@arenaid}" to """&a%{{@arenaid}bb.theme}%" and 9
+					update score with id "8.%loop-value-1%.{@arenaid}" to """   " and 8
+					update score with id "7.%loop-value-1%.{@arenaid}" to """{@construtor}:" and 7
+					update score with id "6.%loop-value-1%.{@arenaid}" to """&a%{{@arenaid}.plotowner}%" and 6
+					update score with id "5.%loop-value-1%.{@arenaid}" to """  " and 5
+					update score with id "4.%loop-value-1%.{@arenaid}" to """{@players}: &a%size of {{@arenaid}.jogadores::*}%/%size of {{@arenaid}.plots::*}%" and 4
+					update score with id "3.%loop-value-1%.{@arenaid}" to """ " and 3
+					update score with id "2.%loop-value-1%.{@arenaid}" to """www.youtube.com" and 2
+					update score with id "1.%loop-value-1%.{@arenaid}" to """     hiperesp" and 1
+					set name of sidebar of loop-value-1 to "&6&lBuild Battle"
+				else:
+					if {{@arenaid}.vencedores} is true:
+						update score with id "12.%loop-value-1%.{@arenaid}" to "" and 0
+						update score with id "11.%loop-value-1%.{@arenaid}" to "" and 0
+						update score with id "10.%loop-value-1%.{@arenaid}" to """{@tema}:" and 10
+						update score with id "9.%loop-value-1%.{@arenaid}" to """&a%{{@arenaid}bb.theme}%" and 9
+						update score with id "8.%loop-value-1%.{@arenaid}" to """   " and 8
+						update score with id "7.%loop-value-1%.{@arenaid}" to """{@vencedor}:" and 7
+						update score with id "6.%loop-value-1%.{@arenaid}" to """&e%{{@arenaid}.score-1own}%" and 6
+						update score with id "5.%loop-value-1%.{@arenaid}" to """  " and 5
+						update score with id "4.%loop-value-1%.{@arenaid}" to """{@players}: &a%size of {{@arenaid}.jogadores::*}%/%size of {{@arenaid}.plots::*}%" and 4
+						update score with id "3.%loop-value-1%.{@arenaid}" to """ " and 3
+						update score with id "2.%loop-value-1%.{@arenaid}" to """www.youtube.com" and 2
+						update score with id "1.%loop-value-1%.{@arenaid}" to """     hiperesp" and 1
+						set name of sidebar of loop-value-1 to "&6&lBuild Battle"
+
+on explosion:
+	cancel event
+
+on place:
+	if {ingame.%player%} is true:
+		if event-block is a sticky piston base or piston base:
+			cancel event
+		else:
+			if event-block is a item frame:
+				cancel event
+		if {{@arenaid}.iniciou} is true:
+			if {{@arenaid}.votacao} is false:
+				if {ingame.%player%} is true:
+					loop {{@arenaid}.plot.%player%::*}:
+						if location of event-block is within {{@arenaid}.plot.%loop-value-1%.a} to {{@arenaid}.plot.%loop-value-1%.b}:
+							cancel event
+			if {{@arenaid}.votacao} is true:
+				cancel event
+
+
+
+on break:
+	if {ingame.%player%} is true:
+		if event-block is a sticky piston base or piston base:
+			cancel event
+		else:
+			if event-block is a item frame:
+				cancel event
+		if {{@arenaid}.iniciou} is true:
+			if {{@arenaid}.votacao} is false:
+				if {ingame.%player%} is true:
+					loop {{@arenaid}.plot.%player%::*}:
+						if location of event-block is within {{@arenaid}.plot.%loop-value-1%.a} to {{@arenaid}.plot.%loop-value-1%.b}:
+							cancel event
+			if {{@arenaid}.votacao} is true:
+				cancel event
+
+
+on rightclick on chest or lever or door:
+	if {{@arenaid}.iniciou} is true:
+		if {{@arenaid}.votacao} is false:
+			if {ingame.%player%} is true:
+				loop {{@arenaid}.plot.%player%::*}:
+					if location of event-block is within {{@arenaid}.plot.%loop-value-1%.a} to {{@arenaid}.plot.%loop-value-1%.b}:
+						cancel event
+			else:
+				cancel event
+
+command /bbiniciarvotacao{@arenaid}:
+	executable by: Console
+	trigger:
+		if {{@arenaid}.iniciou} is true:
+			set {{@arenaid}.votacao} to true
+			loop {{@arenaid}.jogadores::*}:
+				loop {{@arenaid}.plot.%loop-value-1%::*}:
+					add loop-value-2 to {{@arenaid}.votar::*}
+			wait 5 seconds
+			set {{@arenaid}.votacao2} to true
+			execute console command "/bbiniciarvotacaosegundo{@arenaid}"
+
+command /bbiniciarvotacaosegundo{@arenaid}:
+	executable by: Console
+	trigger:
+		if {{@arenaid}.votacao} is true:
+			loop size of {{@arenaid}.votar::*} times:
+				loop {{@arenaid}.votar::*}:
+					loop {{@arenaid}.jogadores::*}:
+						loop {{@arenaid}.plot.%loop-value-2%::*}:
+							if loop-value-1 is equal to loop-value-3:
+								set {{@arenaid}.plotowner2} to {{@arenaid}.plotowner}
+								set {{@arenaid}.plotowner} to loop-value-2
+					remove loop-value-1 from {{@arenaid}.votar::*}
+					teleport {{@arenaid}.jogadores::*} to {{@arenaid}.plot.%loop-value-1%.a}
+					set {{@arenaid}.tempo} to {@tempovote}
+					loop {@tempovote} times:
+						set {{@arenaid}.tempo} to {{@arenaid}.tempo}-1
+						wait 1 second
+					loop size of {{@arenaid}.jogadores::*} times:
+						loop {{@arenaid}.jogadores::*}:
+							if loop-value-2 isn't equal to {{@arenaid}.plotowner}:
+								if {{@arenaid}.votou.%loop-value-2%::%{{@arenaid}.plotowner}%} is not set:
+									add 3 to {{@arenaid}.votos.%{{@arenaid}.plotowner}%}
+									set {{@arenaid}.votou.%loop-value-2%::%{{@arenaid}.plotowner}%} to true
+			execute console command "/bbapurarvotos{@arenaid}"
+			stop
+
+on drop:
+	cancel event
+
+on rightclick holding a {@voteitemgeral}:
+	if {ingame.%player%} is true:
+		if {arena.%player%} is equal to {@arenaid}:
+			if {{@arenaid}.votacao2} is true:
+				if player is equal to {{@arenaid}.plotowner}:
+					send "{@vocenaopodevotar}" to player
+				else:
+					if {{@arenaid}.votou.%player%::%{{@arenaid}.plotowner}%} is not set:
+						if player is holding a {@voteitem1} named "{@voteitem1name}":
+							send "{@vocevotou} {@voteitem1name}" to player
+							add 1 to {{@arenaid}.votos.%{{@arenaid}.plotowner}%}
+							set {{@arenaid}.votou.%player%::%{{@arenaid}.plotowner}%} to true
+							stop
+						if player is holding a {@voteitem2}:
+							send "{@vocevotou} {@voteitem2name}" to player
+							add 2 to {{@arenaid}.votos.%{{@arenaid}.plotowner}%}
+							set {{@arenaid}.votou.%player%::%{{@arenaid}.plotowner}%} to true
+							stop
+						if player is holding a {@voteitem3}:
+							send "{@vocevotou} {@voteitem3name}" to player
+							add 3 to {{@arenaid}.votos.%{{@arenaid}.plotowner}%}
+							set {{@arenaid}.votou.%player%::%{{@arenaid}.plotowner}%} to true
+							stop
+						if player is holding a {@voteitem4}:
+							send "{@vocevotou} {@voteitem4name}" to player
+							add 4 to {{@arenaid}.votos.%{{@arenaid}.plotowner}%}
+							set {{@arenaid}.votou.%player%::%{{@arenaid}.plotowner}%} to true
+							stop
+						if player is holding a {@voteitem5}:
+							send "{@vocevotou} {@voteitem5name}" to player
+							add 5 to {{@arenaid}.votos.%{{@arenaid}.plotowner}%}
+							set {{@arenaid}.votou.%player%::%{{@arenaid}.plotowner}%} to true
+							stop
+						if player is holding a {@voteitem6}:
+							send "{@vocevotou} {@voteitem6name}" to player
+							add 6 to {{@arenaid}.votos.%{{@arenaid}.plotowner}%}
+							set {{@arenaid}.votou.%player%::%{{@arenaid}.plotowner}%} to true
+							send "{@vocerecebeulegendary} {@voteitem6name}" to {{@arenaid}.plotowner}
+							stop
+					else:
+						send "{@vocenaopodevotar2}" to player
+						stop
+
+on rightclick holding a {@menuitem}:
+	if {{@arenaid}.iniciou} is true:
+		if {{@arenaid}.votacao} is false:
+			if {ingame.%player%} is true:
+				loop {{@arenaid}.plot.%player%::*}:
+					if location of player is within {{@arenaid}.plot.%loop-value-1%.a} to {{@arenaid}.plot.%loop-value-1%.b}:
+						send "{@vaparasuaplot}" to player
+					else:
+						open chest with 1 row named "{@menuitemname}" to player
+						wait 5 tick
+						format slot 0 of player with a tnt named "{@explodirtudo}" with lore "{@apagartudo}" to close then run [make player execute command "bb{@arenaid} resetmyplot"]
+						format slot 1 of player with a end portal named "{@efeitos}" with lore "{@efeitos2}" to run [make player execute command "bbefeitos{@arenaid}"]
+
+command /bbefeitos{@arenaid} <text=menu>:
+	executable by: Players
+	trigger:
+		if arg 1 is "menu":
+			if {{@arenaid}.iniciou} is true:
+				if {{@arenaid}.votacao} is false:
+					if {ingame.%player%} is true:
+						loop {{@arenaid}.plot.%player%::*}:
+							if location of player is within {{@arenaid}.plot.%loop-value-1%.a} to {{@arenaid}.plot.%loop-value-1%.b}:
+								send "{@vaparasuaplot}" to player
+							else:
+								open chest with 1 row named "{@efeitos}" to player
+								wait 5 tick
+								format slot 0 of player with a mob spawner named "{@efeitomobspawn}" with lore "{@efeitomobspawnlore}" to close then run [make player execute command "bbefeitos{@arenaid} 1"]
+								format slot 1 of player with a portal named "{@efeitoendersignal}" with lore "{@efeitoendersignallore}" to close then run [make player execute command "bbefeitos{@arenaid} 2"]
+								format slot 2 of player with a blaze powder named "{@efeitosmoke}" with lore "{@efeitosmokelore}" to close then run [make player execute command "bbefeitos{@arenaid} 4"]
+							stop
+						stop
+					stop
+				stop
+			stop
+		if arg 1 is "1":
+			add location of player to {{@arenaid}.effects.mob_spawner_flames::*}
+			stop
+		if arg 1 is "2":
+			add location of player to {{@arenaid}.effects.ender_signal::*}
+			stop
+		if arg 1 is "4":
+			add location of player to {{@arenaid}.effects.smoke::*}
+			stop
+
+on weather change:
+	cancel event
+
+at 8:00:
+	set time to 7:00
+
+on burn:
+	cancel event
+
+on ignition:
+	cancel event
+
+on rightclick with fire charge or flint and steel:
+	cancel event
+
+command /bbapurarvotos{@arenaid}:
+	executable by: Console
+	trigger:
+		loop {{@arenaid}.jogadores::*}:
+			if {{@arenaid}.votos.%loop-value-1%} is more than {{@arenaid}.score-1}:
+				set {{@arenaid}.score-3} to {{@arenaid}.score-2}
+				set {{@arenaid}.score-3own} to {{@arenaid}.score-2own}
+				set {{@arenaid}.score-2} to {{@arenaid}.score-1}
+				set {{@arenaid}.score-2own} to {{@arenaid}.score-1own}
+				set {{@arenaid}.score-1} to {{@arenaid}.votos.%loop-value-1%}
+				set {{@arenaid}.score-1own} to loop-value-1
+			else:
+				if {{@arenaid}.votos.%loop-value-1%} is more than {{@arenaid}.score-2}:
+					set {{@arenaid}.score-3} to {{@arenaid}.score-2}
+					set {{@arenaid}.score-3own} to {{@arenaid}.score-2own}
+					set {{@arenaid}.score-2} to {{@arenaid}.votos.%loop-value-1%}
+					set {{@arenaid}.score-2own} to loop-value-1
+				else:
+					if {{@arenaid}.votos.%loop-value-1%} is more than {{@arenaid}.score-3}:
+						set {{@arenaid}.score-3} to {{@arenaid}.votos.%loop-value-1%}
+						set {{@arenaid}.score-3own} to loop-value-1
+		execute console command "/bbvencedores{@arenaid}"
+
+command /bbvencedores{@arenaid}:
+	executable by: Console
+	trigger:
+		if {{@arenaid}.iniciou} is true:
+			set {{@arenaid}.votacao} to false
+			set {{@arenaid}.vencedores} to true
+			loop {{@arenaid}.plot.%{{@arenaid}.score-1own}%::*}:
+				teleport {{@arenaid}.jogadores::*} to {{@arenaid}.plot.%loop-value-1%.a}
+			send " " to {{@arenaid}.jogadores::*}
+			send "{@cor1}{@1lugar} {@cor1}&l%{{@arenaid}.score-1own}% {@cor1}({@com} %{{@arenaid}.score-1}% {@pontos})" to {{@arenaid}.jogadores::*}
+			send "{@cor2}{@2lugar} {@cor2}&l%{{@arenaid}.score-2own}% {@cor2}({@com} %{{@arenaid}.score-2}% {@pontos})" to {{@arenaid}.jogadores::*}
+			send "{@cor3}{@3lugar} {@cor3}&l%{{@arenaid}.score-3own}% {@cor3}({@com} %{{@arenaid}.score-3}% {@pontos})" to {{@arenaid}.jogadores::*}
+			send " " to {{@arenaid}.jogadores::*}
+			add ball large to {{@arenaid}.fireworktype::*}
+			add creeper to {{@arenaid}.fireworktype::*}
+			add ball to {{@arenaid}.fireworktype::*}
+			add star to {{@arenaid}.fireworktype::*}
+			add burst to {{@arenaid}.fireworktype::*}
+			set {{@arenaid}.fwtype} to a random element out of {{@arenaid}.fireworktype::*}
+			add dark blue to {{@arenaid}.color::*}
+			add green to {{@arenaid}.color::*}
+			add dark aqua to {{@arenaid}.color::*}
+			add dark red to {{@arenaid}.color::*}
+			add purple to {{@arenaid}.color::*}
+			add gold to {{@arenaid}.color::*}
+			add blue to {{@arenaid}.color::*}
+			add lime to {{@arenaid}.color::*}
+			add aqua to {{@arenaid}.color::*}
+			add red to {{@arenaid}.color::*}
+			add pink to {{@arenaid}.color::*}
+			add yellow to {{@arenaid}.color::*}
+			loop {@tempovote} times:
+				wait 1 second
+				set {{@arenaid}.colorchoice} to a random element out of {{@arenaid}.color::*}
+				launch flickering trailing {{@arenaid}.fwtype} firework colored {{@arenaid}.colorchoice} and white at {{@arenaid}.jogadores::*} timed 1
+			delete {{@arenaid}.fireworktype::*}
+			delete {{@arenaid}.color::*}
+			delete {{@arenaid}.colorchoice}
+			delete {{@arenaid}.fwtype}
+			if {{@arenaid}.score-1own} has permission "{@permissionvip}":
+				add {@premio1vip} to {{@arenaid}.score-1own}'s balance
+			else:
+				add {@premio1} to {{@arenaid}.score-1own}'s balance
+			if {{@arenaid}.score-2own} has permission "{@permissionvip}":
+				add {@premio2vip} to {{@arenaid}.score-2own}'s balance
+			else:
+				add {@premio2} to {{@arenaid}.score-2own}'s balance
+			if {{@arenaid}.score-3own} has permission "{@permissionvip}":
+				add {@premio3vip} to {{@arenaid}.score-3own}'s balance
+			else:
+				add {@premio3} to {{@arenaid}.score-3own}'s balance
+			execute console command "/bbresetall{@arenaid}"
